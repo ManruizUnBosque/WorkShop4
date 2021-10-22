@@ -1,0 +1,44 @@
+@Miguel Angel Ruiz Roa
+Inserts: 
+
+INSERT INTO UsuarioApp (username, password, email, role) VALUES ('altria1', '6666', 'paunsf@email.com', 'funcionario');
+INSERT INTO UsuarioApp (username, password, email, role) VALUES ('ishtar2', '4789', 'mivsa@email.com', 'funcionario');
+INSERT INTO UsuarioApp (username, password, email, role) VALUES ('penelope3', '7857', 'pantera@email.com', 'funcionario');
+INSERT INTO UsuarioApp (username, password, email, role) VALUES ('starshine', '7854', 'ghost656@email.com', 'propietario');
+INSERT INTO UsuarioApp (username, password, email, role) VALUES ('maana', '6664', 'zuckerberg@email.com', 'funcionario');
+
+INSERT INTO Normal (username, name) VALUES ('altria1', 'Lucero');
+INSERT INTO Normal (username, name) VALUES ('ishtar2', 'Ana');
+INSERT INTO Normal (username, name) VALUES ('penelope3', 'Felipe');
+INSERT INTO Normal (username, name) VALUES ('starshine', 'Velazques');
+INSERT INTO Normal (username, name) VALUES ('maana', 'lucifero');
+
+INSERT INTO Dueño (username, name, address, neighborhood) VALUES ('altria1', 'Lucero', 'Cra 10', 'Country Sur');
+INSERT INTO Dueño (username, name, address, neighborhood) VALUES ('ishtar2', 'Ana', 'Calle 40', 'Quiroga');
+INSERT INTO Dueño (username, name, address, neighborhood) VALUES ('penelope3', 'Felipe', 'Calle 19', 'La favorita');
+INSERT INTO Dueño (username, name, address, neighborhood) VALUES ('starshine', 'Velazques', 'Caracas con 13', 'Zona Industrial');
+INSERT INTO Dueño (username, name, address, neighborhood) VALUES ('maana', 'lucifero', 'Carrera 13', 'No registra');
+
+INSERT INTO Veterinario (username, name, address, neighborhood) VALUES ('altria1', 'Lucero', 'Primera De Mayo', 'Ciudad Jardin');
+INSERT INTO Veterinario (username, name, address, neighborhood) VALUES ('ishtar2', 'Ana', 'Calle 200', 'Santa Fe');
+INSERT INTO Veterinario (username, name, address, neighborhood) VALUES ('penelope3', 'Felipe', 'Primera De Mayo', 'Ciudad Jardin');
+INSERT INTO Veterinario (username, name, address, neighborhood) VALUES ('starshine', 'Velazques', 'Caracas con 24', 'Quiroga');
+INSERT INTO Veterinario (username, name, address, neighborhood) VALUES ('maana', 'lucifero', 'Primera De Mayo', 'Ciudad Jardin');
+
+INSERT INTO AtributosMascota (microchip, name, species, race, size, sex, picture, owner_id) VALUES ('666a', 'Thor', 'dog', 'siberiano', 'L', 'female', 'thor.png', 'altria1');
+INSERT INTO AtributosMascota (microchip, name, species, race, size, sex, picture, owner_id) VALUES ('666b', 'Venus', 'cat', 'egiptian', 'S', 'female', 'venus.png', 'ishtar2');
+INSERT INTO AtributosMascota (microchip, name, species, race, size, sex, picture, owner_id) VALUES ('666c', 'Freiya', 'cat', 'egiptian', 'S', 'male', 'freiya.png', 'penelope3');
+INSERT INTO AtributosMascota (microchip, name, species, race, size, sex, picture, owner_id) VALUES ('666d', 'Pacho', 'cat', 'egiptian', 'S', 'female', 'pacho.png', 'starshine');
+INSERT INTO AtributosMascota (microchip, name, species, race, size, sex, picture, owner_id) VALUES ('666e', 'Ozas', 'cat', 'maltes', 'S', 'female', 'ozas.png', 'maana');
+
+INSERT INTO Visitante (created_at, type, description, vet_id) VALUES ('06/01/2019', 'esterilizacion', 'esterilizacion mascota', 'altria1');
+INSERT INTO Visitante (created_at, type, description, vet_id) VALUES ('15/02/2018', 'esterilizacion', 'esterilizacion mascota', 'ishtar2');
+INSERT INTO Visitante (created_at, type, description, vet_id) VALUES ('30/03/2017', 'esterilizacion', 'esterilizacion mascota', 'penelope3');
+INSERT INTO Visitante (created_at, type, description, vet_id) VALUES ('20/04/2016', 'control', 'checkeo rutinario', 'starshine');
+INSERT INTO Visitante (created_at, type, description, vet_id) VALUES ('30/05/2015', 'vacunacion', 'aplicacion vacuna antirabica', 'maana');
+																	  
+INSERT INTO CasoMascota (created_at, type, description) VALUES ('25/05/2021', 'robo', 'robo mascota en pleno asalto');
+INSERT INTO CasoMascota (created_at, type, description) VALUES ('20/09/2020', 'robo', 'robo mascota por descuido');
+INSERT INTO CasoMascota (created_at, type, description) VALUES ('15/07/2020', 'robo', 'robo mascota por parte de extranjeros');
+INSERT INTO CasoMascota (created_at, type, description) VALUES ('10/02/2020', 'robo', 'robo por descuido');
+INSERT INTO CasoMascota (created_at, type, description) VALUES ('5/04/2020', 'perdida', 'gato escapo');

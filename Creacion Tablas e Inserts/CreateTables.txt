@@ -1,0 +1,80 @@
+@Miguel Angel Ruiz Roa
+Create Tables:
+CREATE TABLE UsuarioApp (
+	email VARCHAR NOT NULL,
+	role VARCHAR NOT NULL,
+	username VARCHAR NOT NULL,
+	password VARCHAR NOT NULL,
+	PRIMARY KEY (username)
+);
+
+CREATE TABLE Dueño (
+	username VARCHAR NOT NULL,
+	person_id SERIAL NOT NULL,
+	name VARCHAR NOT NULL,
+	address VARCHAR NOT NULL,
+	neighborhood VARCHAR NOT NULL,
+	UNIQUE (person_id),
+	PRIMARY KEY (username),
+	FOREIGN KEY (username) 
+		REFERENCES UsuarioApp (username)
+);
+
+CREATE TABLE AtributosMascota (
+	pet_id SERIAL NOT NULL,
+	microchip VARCHAR NOT NULL,
+	name VARCHAR NOT NULL,
+	species VARCHAR NOT NULL,
+	race VARCHAR NOT NULL,
+	size VARCHAR NOT NULL,
+	sex VARCHAR NOT NULL,
+	picture VARCHAR NOT NULL,
+	owner_id VARCHAR NOT NULL,
+	UNIQUE (microchip),
+	PRIMARY KEY (pet_id),
+	FOREIGN KEY (owner_id)
+		REFERENCES Dueño (username)
+);
+
+CREATE TABLE CasoMascota (
+	case_id SERIAL NOT NULL,
+	created_at VARCHAR NOT NULL,
+	type VARCHAR NOT NULL,
+	description VARCHAR NOT NULL,
+	pet_id SERIAL NOT NULL,
+	PRIMARY KEY (case_id),
+	FOREIGN KEY (pet_id)
+		REFERENCES AtributosMascota (pet_id)
+);
+
+CREATE TABLE Veterinario (
+	username VARCHAR NOT NULL,
+	name VARCHAR NOT NULL,
+	address VARCHAR NOT NULL,
+	neighborhood VARCHAR NOT NULL,
+	PRIMARY KEY (username),
+	FOREIGN KEY (username)
+		REFERENCES UsuarioApp (username)
+);
+
+CREATE TABLE Normal (
+	username VARCHAR NOT NULL,
+	name VARCHAR NOT NULL,
+	PRIMARY KEY (username),
+	FOREIGN KEY (username)
+		REFERENCES UsuarioApp (username)
+);
+
+CREATE TABLE Visitante (
+	visit_id SERIAL NOT NULL,
+	created_at VARCHAR NOT NULL,
+	type VARCHAR NOT NULL,
+	description VARCHAR NOT NULL,
+	vet_id VARCHAR NOT NULL,
+	pet_id SERIAL NOT NULL,
+	PRIMARY KEY (visit_id),
+	FOREIGN KEY (vet_id)
+		REFERENCES Veterinario (username),
+	FOREIGN KEY (pet_id)
+		REFERENCES AtributosMascota (pet_id)
+);
