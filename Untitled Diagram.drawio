@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-18T20:17:40.271Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="co-5bvVJfMhTAddMaQBO" version="21.1.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2023-04-18T20:25:14.316Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="iZWOshHjRuE7qZLCzM8x" version="21.1.8" type="github" pages="2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1163" dy="2112" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -253,8 +253,8 @@
         <mxCell id="_R5fIsePHldaFmX75DBj-4" value="Estado(&lt;u&gt;ID_Viejo&lt;/u&gt;, &lt;u&gt;ID_Nuevo, Matricula&lt;/u&gt;)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="73" y="799" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_R5fIsePHldaFmX75DBj-5" value="Viejo(&lt;u&gt;ID_Viejo&lt;/u&gt;, Unidades, Kilometraje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="40" y="720" width="230" height="30" as="geometry" />
+        <mxCell id="_R5fIsePHldaFmX75DBj-5" value="Viejo(&lt;u&gt;ID_Viejo&lt;/u&gt;, Kilometraje)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="70" y="720" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="_R5fIsePHldaFmX75DBj-6" value="Nuevo(Unidades, &lt;u&gt;ID_Nuevo&lt;/u&gt;)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="105" y="880" width="180" height="30" as="geometry" />
@@ -321,8 +321,8 @@
             <mxPoint x="439" y="740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_R5fIsePHldaFmX75DBj-18" value="&lt;h1&gt;TUPLAS&lt;/h1&gt;&lt;p&gt;Reparacion:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;[{01/02/2001, 07:58, AZX789, 456789},&lt;/span&gt;&lt;/p&gt;{01/02/2005, 09:58, cvd487, 894576}, &lt;br&gt;{01/05/2004, 07:58, qwe417, 485698}]&lt;br&gt;&lt;br&gt;Mecanico:[{Miguell,45678,07/02/2013,99050807,asw456},&lt;br&gt;{Andres,159874,07/02/2017,101050807,aio456},&lt;br&gt;{Luna,15462,04/09/2013,99050807,qwe154}]&lt;br&gt;&lt;br&gt;Coche:[{Azul, mazda, asw456,99050265,445v,null},&lt;br&gt;{Gris, mazda, ert152,4875165,null,487N},&lt;br&gt;{Azul, Toyota, dcf154,33120265,445v,null}]&lt;br&gt;&lt;br&gt;Viejo:[{789,2,1562},{459,5,152},{154,7,50000}&lt;span style=&quot;background-color: initial;&quot;&gt;]&lt;br&gt;&lt;br&gt;Estado:&amp;nbsp;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="482" y="480" width="472" height="250" as="geometry" />
+        <mxCell id="_R5fIsePHldaFmX75DBj-18" value="&lt;h1&gt;TUPLAS&lt;/h1&gt;&lt;p&gt;Reparacion:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;[{01/02/2001, 07:58, AZX789, 456789},&lt;/span&gt;&lt;/p&gt;{01/02/2005, 09:58, cvd487, 894576}, &lt;br&gt;{01/05/2004, 07:58, qwe417, 485698}]&lt;br&gt;&lt;br&gt;Mecanico:[{Miguell,45678,07/02/2013,99050807,asw456},&lt;br&gt;{Andres,159874,07/02/2017,101050807,aio456},&lt;br&gt;{Luna,15462,04/09/2013,99050807,qwe154}]&lt;br&gt;&lt;br&gt;Coche:[{Azul, mazda, asw456,99050265,445v,null},&lt;br&gt;{Gris, mazda, ert152,4875165,null,487N},&lt;br&gt;{Azul, Toyota, dcf154,33120265,445v,null}]&lt;br&gt;&lt;br&gt;Viejo:[{789,1562},{459,152},{154,50000}]&lt;br&gt;&lt;br&gt;Estado: [{456789,null, asd456},&lt;br&gt;{null,451263, qwd154},{456789,null, azx154}]&lt;br&gt;&lt;br&gt;Nuevo: [{2,755},{4,2154},{3, 3312}]&lt;br&gt;&lt;br&gt;Cliente: [{990805, Calle 45, Andres, 78894564, 33as1, cdv474},&lt;br&gt;{5408949, Calle 33, Liuna, 755441254, 49ert1, asd789},&lt;br&gt;{9875644, Calle 105, Mayulied, 7889541, 66sss6, zxc123},&lt;span style=&quot;background-color: initial;&quot;&gt;]&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="455" y="490" width="370" height="420" as="geometry" />
         </mxCell>
         <mxCell id="_R5fIsePHldaFmX75DBj-19" value="Kilometraje" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="832.5" y="165" width="80" height="40" as="geometry" />
